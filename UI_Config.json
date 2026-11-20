@@ -1,0 +1,391 @@
+{
+    "output_file": "user_data/config.json",
+
+    "enable_crit": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить критические броски",
+        "tooltip": "Включает критические успехи и провалы",
+        "group": "General"
+    },
+    "enable_pity": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить Pity бонус (для бедной пандочки)",
+        "tooltip": "Включает накопление скрытой удачи после провала",
+        "group": "General"
+    },
+    "open_levels_btn": {
+        "type": "button",
+        "label": "🎚️ Открыть levels.json",
+        "tooltip": "Открывает файл levels.json для редактирования",
+        "function": "open_levels_file",
+        "wsevent": "",
+        "group": "General"
+    },
+    "open_messages_btn": {
+        "type": "button",
+        "label": "💌 Открыть messages.json",
+        "tooltip": "Открывает файл с текстами для редактирования",
+        "function": "open_messages_file",
+        "wsevent": "",
+        "group": "General"
+    },
+    "General_Cooldown_Label": {
+        "type": "text",
+        "value": "",
+        "label": "=== НАСТРОЙКИ КУЛДАУНОВ ===",
+        "tooltip": "кулдаун. Звучит как 2 оскорбления одновременно",
+        "group": "General"
+    },
+    "global_raid_cooldown": {
+        "type": "numberbox",
+        "value": 600,
+        "label": "Общий КД для вылазок (сек)",
+        "tooltip": "Единый кулдаун для команд !рейд, !погружение, !искажение, !лунатик и пр.",
+        "group": "General"
+    },
+    "global_dungeon_cooldown": {
+        "type": "numberbox",
+        "value": 1200,
+        "label": "Общий КД для данжей (сек)",
+        "tooltip": "Единый кулдаун для всех подземелий (Бездна и т.д.)",
+        "group": "General"
+    },
+    "Events_Label": {
+        "type": "text",
+        "value": "=== СОБЫТИЯ ===",
+        "label": "",
+        "tooltip": "",
+        "group": "Events"
+    },
+    "Monster_Label": {
+        "type": "text",
+        "value": "===  ПОДКРОВАТНЫЙ МОНСТР ===",
+        "label": "",
+        "tooltip": "Настройки события",
+        "group": "Event_Monster"
+    },
+    "monster_event_active": {
+        "type": "checkbox",
+        "value": false,
+        "label": "Активировать монстра",
+        "tooltip": "Включение запускает ивент, выключение — останавливает",
+        "group": "Event_Monster"
+    },
+    "monster_move_interval": {
+        "type": "numberbox",
+        "value": 600,
+        "label": "Интервал смены локации (сек)",
+        "tooltip": "Как часто Подкроватный монстр меняет рейд",
+        "group": "Event_Monster"
+    },
+    "monster_start_strength": {
+        "type": "numberbox",
+        "value": 5,
+        "label": "Начальная сила монстра",
+        "tooltip": "Сколько успехов нужно, чтобы ослабить его до 0. Каждый провал увеличивает силу.",
+        "group": "Event_Monster"
+    },
+    "monster_penalty_dreams": {
+        "type": "numberbox",
+        "value": 30,
+        "label": "Штраф грез при провале",
+        "tooltip": "Сколько грез забирает монстр при провале",
+        "group": "Event_Monster"
+    },
+    "monster_reward_exp": {
+        "type": "numberbox",
+        "value": 1000,
+        "label": "Опыт за убийство",
+        "tooltip": "Награда делится между всеми",
+        "group": "Event_Monster"
+    },
+    "monster_reward_dreams": {
+        "type": "numberbox",
+        "value": 500,
+        "label": "Грезы за убийство",
+        "tooltip": "Награда делится между всеми",
+        "group": "Event_Monster"
+    },
+    "monster_reward_rep": {
+        "type": "numberbox",
+        "value": 10,
+        "label": "Репутация за убийство",
+        "tooltip": "Награда репутации только тому, кто нанес решающий удар",
+        "group": "Event_Monster"
+    },
+
+    "Raid_Settings_Label": {
+        "type": "text",
+        "value": "",
+        "label": "=== ВЫЛАЗКИ ===",
+        "tooltip": "",
+        "group": "Raids"
+    },
+    "enable_raid": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить !рейд",
+        "tooltip": "Разрешает использование команды",
+        "group": "Raids"
+    },
+    "raid_success_chance": {
+        "type": "slider",
+        "value": 40,
+        "min": 5,
+        "max": 95,
+        "ticks": 5,
+        "label": "Шанс успеха !рейд (%)",
+        "tooltip": "Шанс успеха",
+        "group": "Raids"
+    },
+    "raid_win_exp": {
+        "type": "numberbox",
+        "value": 25,
+        "label": "Опыт при успехе",
+        "tooltip": "Награда опыта",
+        "group": "Raids"
+    },
+    "raid_win_dreams": {
+        "type": "numberbox",
+        "value": 10,
+        "label": "Грезы при успехе",
+        "tooltip": "Награда грез",
+        "group": "Raids"
+    },
+    "raid_lose_exp": {
+        "type": "numberbox",
+        "value": 5,
+        "label": "Опыт при провале",
+        "tooltip": "Опыт при поражении",
+        "group": "Raids"
+    },
+    "raid_lose_dreams": {
+        "type": "numberbox",
+        "value": 10,
+        "label": "Минус грезы при провале",
+        "tooltip": "Потеря грез при поражении",
+        "group": "Raids"
+    },
+
+    "enable_deep": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить !погружение",
+        "tooltip": "Разрешает использование команды",
+        "group": "Raids"
+    },
+    "deep_success_chance": {
+        "type": "slider",
+        "value": 45,
+        "min": 5,
+        "max": 95,
+        "ticks": 5,
+        "label": "Шанс успеха !погружение (%)",
+        "tooltip": "Шанс успеха",
+        "group": "Raids"
+    },
+    "deep_win_exp": {
+        "type": "numberbox",
+        "value": 50,
+        "label": "Опыт при успехе",
+        "tooltip": "Награда опыта",
+        "group": "Raids"
+    },
+    "deep_win_dreams": {
+        "type": "numberbox",
+        "value": 25,
+        "label": "Грезы при успехе",
+        "tooltip": "Награда грез",
+        "group": "Raids"
+    },
+    "deep_lose_exp": {
+        "type": "numberbox",
+        "value": 25,
+        "label": "Опыт при провале",
+        "tooltip": "Опыт при поражении",
+        "group": "Raids"
+    },
+    "deep_lose_dreams": {
+        "type": "numberbox",
+        "value": 10,
+        "label": "Грезы при провале",
+        "tooltip": "Потеря грез при поражении",
+        "group": "Raids"
+    },
+
+    "enable_distort": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить !искажение",
+        "tooltip": "Разрешает использование команды",
+        "group": "Raids"
+    },
+    "distort_success_chance": {
+        "type": "slider",
+        "value": 50,
+        "min": 5,
+        "max": 95,
+        "ticks": 5,
+        "label": "Шанс успеха !искажение (%)",
+        "tooltip": "Шанс успеха",
+        "group": "Raids"
+    },
+    "distort_win_exp": {
+        "type": "numberbox",
+        "value": 150,
+        "label": "Опыт при успехе",
+        "tooltip": "Награда опыта",
+        "group": "Raids"
+    },
+    "distort_win_dreams": {
+        "type": "numberbox",
+        "value": 50,
+        "label": "Грезы при успехе",
+        "tooltip": "Награда грез",
+        "group": "Raids"
+    },
+    "distort_lose_exp": {
+        "type": "numberbox",
+        "value": 150,
+        "label": "Опыт при провале",
+        "tooltip": "Опыт при поражении",
+        "group": "Raids"
+    },
+    "distort_lose_dreams": {
+        "type": "numberbox",
+        "value": 50,
+        "label": "Грезы при провале",
+        "tooltip": "Потеря грез при поражении",
+        "group": "Raids"
+    },
+
+    "enable_sleep": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить !уложить спать",
+        "tooltip": "Разрешает использование команды",
+        "group": "Raids"
+    },
+    "sleep_win_exp": {
+        "type": "numberbox",
+        "value": 15,
+        "label": "Опыт при успехе (цели)",
+        "tooltip": "Сколько опыта получит цель",
+        "group": "Raids"
+    },
+    "sleep_win_dreams": {
+        "type": "numberbox",
+        "value": 5,
+        "label": "Грезы при успехе (цели)",
+        "tooltip": "Сколько грез получит цель",
+        "group": "Raids"
+    },
+    "sleep_rep_giver": {
+        "type": "numberbox",
+        "value": 1,
+        "label": "Репутация дающему",
+        "tooltip": "Сколько репутации получит тот, кто уложил спать",
+        "group": "Raids"
+    },
+    "sleep_titles_required": {
+        "type": "numberbox",
+        "value": 100,
+        "label": "Сколько раз для титула",
+        "tooltip": "Количество использований для получения титула   тельница",
+        "group": "Raids"
+    },
+    "enable_sleepwalker": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить рейд !лунатик",
+        "tooltip": "Разрешает использование команды. Награды и исходы прописаны в коде.",
+        "group": "Raids"
+    },
+
+    "Dungeon_Settings_Label": {
+        "type": "text",
+        "value": "",
+        "label": "=== ДАНЖИ ===",
+        "tooltip": "",
+        "group": "Dungeons"
+    },
+    "enable_abyss": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить !бездна",
+        "tooltip": "Разрешает использование команды",
+        "group": "Dungeons"
+    },
+    "abyss_success_chance": {
+        "type": "slider",
+        "value": 30,
+        "min": 5,
+        "max": 95,
+        "ticks": 5,
+        "label": "Шанс успеха !бездна (%)",
+        "tooltip": "Шанс успеха",
+        "group": "Dungeons"
+    },
+    "abyss_cost": {
+        "type": "numberbox",
+        "value": 100,
+        "label": "Стоимость входа (грезы)",
+        "tooltip": "Сколько грез стоит вход",
+        "group": "Dungeons"
+    },
+    "abyss_win_exp": {
+        "type": "numberbox",
+        "value": 500,
+        "label": "Опыт при успехе",
+        "tooltip": "Награда опыта",
+        "group": "Dungeons"
+    },
+    "abyss_win_rep": {
+        "type": "numberbox",
+        "value": 5,
+        "label": "Репутация при успехе",
+        "tooltip": "Награда репутации",
+        "group": "Dungeons"
+    },
+
+    "enable_goblin_cave": {
+        "type": "checkbox",
+        "value": true,
+        "label": "Включить !пещера",
+        "tooltip": "Разрешает использование команды (Заглушка)",
+        "group": "Dungeons"
+    },
+    "goblin_cave_success_chance": {
+        "type": "slider",
+        "value": 60,
+        "min": 5,
+        "max": 95,
+        "ticks": 5,
+        "label": "Шанс успеха !пещера (%)",
+        "tooltip": "Шанс успеха",
+        "group": "Dungeons"
+    },
+    "goblin_cave_cost": {
+        "type": "numberbox",
+        "value": 50,
+        "label": "Стоимость входа (грезы)",
+        "tooltip": "Сколько грез стоит вход",
+        "group": "Dungeons"
+    },
+    "goblin_cave_win_exp": {
+        "type": "numberbox",
+        "value": 200,
+        "label": "Опыт при успехе",
+        "tooltip": "Награда опыта",
+        "group": "Dungeons"
+    },
+    "goblin_cave_win_rep": {
+        "type": "numberbox",
+        "value": 2,
+        "label": "Репутация при успехе",
+        "tooltip": "Награда репутации",
+        "group": "Dungeons"
+    }
+}

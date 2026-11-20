@@ -1,0 +1,14 @@
+{
+    "active_events": {}, 
+    "monster": {
+        "active": true, 
+        "defeated_by": [
+            "ulichniypirojok"
+        ], 
+        "total_encounters": 6, 
+        "total_defeats": 0, 
+        "last_move_time": 1795200923.7488632, 
+        "strength": 31, 
+        "location": "!пещера"
+    }
+}

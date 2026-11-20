@@ -1,0 +1,102 @@
+{
+    "ulichniypirojok": {
+        "raids_total": 43, 
+        "raids_success": 17, 
+        "total_exp": 46970, 
+        "reputation": 391, 
+        "blessing_target": "streetpie", 
+        "babysitter_shield": false, 
+        "sleep_count": 0, 
+        "death_count": 21, 
+        "blessings": {
+            "anpal_ulichniypirojok": 1
+        }, 
+        "dreams": 2645, 
+        "name": "ulichniypirojok", 
+        "dirty_count": 4, 
+        "is_down": true, 
+        "solo_kills": 12, 
+        "sleepwalker_seen": [
+            2, 
+            6, 
+            1, 
+            4, 
+            3, 
+            7, 
+            8, 
+            5
+        ], 
+        "sleepwalker_count": 8, 
+        "dice_bonus": 1, 
+        "levelup_choices": [], 
+        "pity_raid": 6, 
+        "mouse_count": 3, 
+        "rescues_count": 0, 
+        "title": "АнПал", 
+        "is_participating": false, 
+        "raids_fail": 26, 
+        "moon_bonus_count": 2, 
+        "titles": [
+            "Модератор", 
+            "М҉̕͜и̵̧҇с̷̧̕с̷͜͞и̶̡҇я̸͢͠", 
+            "̶С̶п̶а̶с̶и̶т̶е̶л̶ь̶", 
+            "Мертв Внутри", 
+            "Ходячий Мертвец", 
+            "Лунатик", 
+            "АнПал"
+        ], 
+        "crit_streak": 0, 
+        "pity_dungeon": 0
+    }, 
+    "streetpie": {
+        "raids_total": 131, 
+        "raids_success": 79, 
+        "bonus_greed": true, 
+        "total_exp": 36330, 
+        "reputation": 148, 
+        "blessing_target": "streetpie", 
+        "babysitter_shield": true, 
+        "sleep_count": 9, 
+        "blessings": {
+            "caster_streetpie": 2, 
+            "caster_ulichniypirojok": 1, 
+            "anpal_ulichniypirojok": 1
+        }, 
+        "dreams": 5461, 
+        "name": "streetpie", 
+        "dirty_count": 12, 
+        "is_down": false, 
+        "solo_kills": 10, 
+        "sleepwalker_seen": [
+            1, 
+            4, 
+            6, 
+            3, 
+            5, 
+            2
+        ], 
+        "dice_bonus": 4, 
+        "sleepwalker_count": 6, 
+        "levelup_choices": [
+            "20"
+        ], 
+        "pity_raid": 1, 
+        "mouse_count": 3, 
+        "rescues_count": 10, 
+        "title": "Ведьмак", 
+        "is_participating": false, 
+        "raids_fail": 51, 
+        "moon_bonus_count": 9, 
+        "titles": [
+            "Спаситель", 
+            "Воспитательница", 
+            "Лунатик", 
+            "Шулер", 
+            "Модератор", 
+            "Ведьмак", 
+            "Миссия"
+        ], 
+        "pity_dungeon": 2, 
+        "crit_streak": 0
+    }
+}
