@@ -67,9 +67,9 @@
     "level_need_10": "{user}, нужен 10 уровень.",
     "level_need_15": "{user}, для этого нужен 15 уровень.",
     "cooldown_wait": "{user}, отдохни еще {sec} сек.",
-    "sleepwalker_cooldown": "{user}, отдохни еще {sec} сек. (общий кд: {total} сек.)",
+    "sleepwalker_cooldown": "{user}, отдохни еще {sec} сек. (кд: {total} сек.)",
     "dungeon_cooldown": "{user}, подожди {sec} сек.",
-    "raid_cooldown": "{user}, отдохни еще {sec} сек. (полный: {total} сек.)",
+    "raid_cooldown": "{user}, отдохни еще {sec} сек. (кд: {total} сек.)",
 
     "dungeon_crit_lose": " {dice_msg} | 💥 КРИТ ПРОВАЛ! {user} поглотила тьма! Напишите !помочь @{user}.",
     "dungeon_crit_lose_danger": " {dice_msg} | 💥 КРИТ ПРОВАЛ! {user} поглотила тьма кошмаров!",

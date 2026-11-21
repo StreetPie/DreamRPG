@@ -115,14 +115,14 @@ def _handle_monster_fight(user, user_id, user_name, world, cfg, Parent, users_da
     
     if not crit_f:
         # Обычный провал (не смерть)
-        lost = progression.remove_dreams(user, pen_dreams, cfg)
+        lost = progression.remove_dreams(user, pen_dreams)
         Parent.SendStreamMessage(cfg.messages["monster_encounter_fail"].format(user=user_name, strength=world.get_monster()["strength"], lost=lost))
     else:
         
         # Если игрок уже мертв (is_down=True) ИЛИ у него титул "Мертв Внутри"
         if user.get("is_down", False) or titles.has_title(user, "Мертв Внутри"):
             user["death_count"] = user.get("death_count", 0) + 1
-            titles.check_walking_dead_title(user, Parent)
+            titles.check_walking_dead_title(user, Parent, cfg)
             if titles.has_title(user, "Ходячий Мертвец"):
                 # Функция сама начислит опыт, грезы и напишет сообщение
                 progression.give_walking_dead_reward(user, file_path, Parent)
@@ -165,13 +165,12 @@ def _defeat_monster(world, cfg, Parent, users_data, save_data, file_path, killer
 
     # --- БЛОК СОЛО / ГРУППА ---
     if num_players == 1:
-        # СОЛО (убийца один)
         u = users_data[killer_user_id]
         progression.add_exp(u, base_exp, file_path)
         progression.add_dreams(u, base_dreams)
         u["reputation"] += base_rep
         u["solo_kills"] = u.get("solo_kills", 0) + 1
-        titles.check_witcher_title(u, Parent)
+        titles.check_witcher_title(u, Parent, cfg)
         Parent.SendStreamMessage(cfg.messages["monster_encounter_win"].format(user=killer_name, exp=base_exp, dreams=base_dreams, rep=base_rep))
         
     else:

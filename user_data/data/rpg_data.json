@@ -2,16 +2,16 @@
     "ulichniypirojok": {
         "raids_total": 44, 
         "raids_success": 18, 
-        "total_exp": 47195, 
+        "total_exp": 47235, 
         "reputation": 391, 
         "blessing_target": "streetpie", 
-        "babysitter_shield": false, 
+        "babysitter_shield": true, 
         "sleep_count": 0, 
         "death_count": 21, 
         "blessings": {
             "anpal_ulichniypirojok": 1
         }, 
-        "dreams": 2565, 
+        "dreams": 2585, 
         "name": "ulichniypirojok", 
         "dirty_count": 4, 
         "is_down": true, 
@@ -49,24 +49,24 @@
         "pity_dungeon": 0
     }, 
     "streetpie": {
-        "raids_total": 131, 
-        "raids_success": 79, 
+        "raids_total": 153, 
+        "raids_success": 91, 
         "bonus_greed": true, 
-        "total_exp": 36330, 
-        "reputation": 148, 
+        "total_exp": 40752, 
+        "reputation": 164, 
         "blessing_target": "streetpie", 
         "babysitter_shield": true, 
-        "sleep_count": 9, 
+        "sleep_count": 10, 
         "blessings": {
             "caster_streetpie": 2, 
             "caster_ulichniypirojok": 1, 
             "anpal_ulichniypirojok": 1
         }, 
-        "dreams": 5461, 
+        "dreams": 6033, 
         "name": "streetpie", 
         "dirty_count": 12, 
         "is_down": false, 
-        "solo_kills": 10, 
+        "solo_kills": 11, 
         "sleepwalker_seen": [
             1, 
             4, 
@@ -85,7 +85,7 @@
         "rescues_count": 10, 
         "title": "Ведьмак", 
         "is_participating": false, 
-        "raids_fail": 51, 
+        "raids_fail": 61, 
         "moon_bonus_count": 9, 
         "titles": [
             "Спаситель", 
@@ -97,6 +97,6 @@
             "Миссия"
         ], 
         "pity_dungeon": 2, 
-        "crit_streak": 0
+        "crit_streak": 1
     }
 }

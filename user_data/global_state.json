@@ -1,14 +1,12 @@
 {
     "active_events": {}, 
     "monster": {
-        "active": true, 
-        "defeated_by": [
-            "streetpie"
-        ], 
-        "total_encounters": 1, 
+        "active": false, 
+        "defeated_by": [], 
+        "total_encounters": 3, 
         "total_defeats": 0, 
-        "last_move_time": 1795223889.7446899, 
-        "strength": 14, 
-        "location": "!бездна"
+        "last_move_time": 1795225689.7925339, 
+        "strength": 0, 
+        "location": null
     }
 }

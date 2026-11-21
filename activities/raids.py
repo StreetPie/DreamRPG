@@ -28,7 +28,7 @@ def handle_raid(command, user, user_name, users_data, data, cfg, file_path, cool
         last_raid_time = cooldowns[user_id].get("last_raid_time", 0)
         if now - last_raid_time < global_cd:
             remaining = int(global_cd - (now - last_raid_time))
-            Parent.SendStreamMessage(cfg.messages["cooldown_wait"].format(user=user_name, sec=remaining))
+            Parent.SendStreamMessage(cfg.messages["raid_cooldown"].format(user=user_name, sec=remaining, total=global_cd))
             return
 
         target_name = data.GetParam(2)
@@ -134,7 +134,7 @@ def handle_raid(command, user, user_name, users_data, data, cfg, file_path, cool
     last_raid_time = cooldowns[user_id].get("last_raid_time", 0)
     if now - last_raid_time < global_cd:
         remaining = int(global_cd - (now - last_raid_time))
-        cfg.messages["raid_cooldown"].format(user=user_name, sec=remaining, total=global_cd)
+        Parent.SendStreamMessage(cfg.messages["raid_cooldown"].format(user=user_name, sec=remaining, total=global_cd))
         return
 
     # 4. Запуск рейда

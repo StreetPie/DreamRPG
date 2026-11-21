@@ -163,7 +163,7 @@ def handle_sleepwalker(user, user_name, cfg, file_path, cooldowns, user_id, now,
 def try_cooldown_reset(user, user_name, cooldowns, user_id, Parent):
     if not titles.has_title(user, "Лунатик"):
         return False
-    if random.SystemRandom().randint(1, 100) <= 7:
+    if random.SystemRandom().randint(1, 100) <= 6:
         cooldowns[user_id]["last_raid_time"] = 0
         cooldowns[user_id]["last_dungeon_time"] = 0
         Parent.SendStreamMessage(
