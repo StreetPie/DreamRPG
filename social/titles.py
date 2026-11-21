@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-def list_titles(user, user_name, Parent):
+def list_titles(user, user_name, Parent, cfg):
     """Выводит список титулов игрока."""
     if not user.get("titles"):
         Parent.SendStreamMessage(cfg.messages["title_list_empty"].format(user=user_name))

@@ -1,8 +1,8 @@
 {
     "ulichniypirojok": {
-        "raids_total": 43, 
-        "raids_success": 17, 
-        "total_exp": 46970, 
+        "raids_total": 44, 
+        "raids_success": 18, 
+        "total_exp": 47195, 
         "reputation": 391, 
         "blessing_target": "streetpie", 
         "babysitter_shield": false, 
@@ -11,7 +11,7 @@
         "blessings": {
             "anpal_ulichniypirojok": 1
         }, 
-        "dreams": 2645, 
+        "dreams": 2565, 
         "name": "ulichniypirojok", 
         "dirty_count": 4, 
         "is_down": true, 
@@ -26,8 +26,8 @@
             8, 
             5
         ], 
-        "sleepwalker_count": 8, 
         "dice_bonus": 1, 
+        "sleepwalker_count": 8, 
         "levelup_choices": [], 
         "pity_raid": 6, 
         "mouse_count": 3, 
@@ -75,8 +75,8 @@
             5, 
             2
         ], 
-        "dice_bonus": 4, 
         "sleepwalker_count": 6, 
+        "dice_bonus": 4, 
         "levelup_choices": [
             "20"
         ], 

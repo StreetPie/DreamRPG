@@ -95,8 +95,6 @@ def handle_blessing(user, user_name, users_data, data, Parent, save_data_func, c
             return
 
     # 5. Обычное благословение (Спаситель или Миссия)
-    # АнПал тоже может кидать обычное, но он не должен спамить.
-    # Проверяем, не кинул ли он уже бафф на кого-то (в этом случае он должен снять с прошлого).
     if titles.has_title(user, "АнПал"):
         Parent.SendStreamMessage(cfg.messages["blessing_anpal_no_target"].format(user=user_name))
         return

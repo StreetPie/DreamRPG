@@ -138,7 +138,7 @@ def Execute(data):
         return
 
     if command == "!титулы":
-        titles.list_titles(user, user_name, Parent)
+        titles.list_titles(user, user_name, Parent, cfg)
         return
 
     if command == "!ивент":

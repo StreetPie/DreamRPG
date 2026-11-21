@@ -78,11 +78,9 @@ class ConfigManager:
 
     def load_messages(self):
         """Загружает тексты из messages.json"""
-        msg_path = os.path.join(os.path.dirname(self.file_path), "messages.json")
-        default_messages = {
-            "raid_win": "🎲 {dice_msg} | ⚔️ Успех! +{exp} опыта, +{dreams} грез.",
-            # заглушка
-        }
+        user_dir = os.path.dirname(os.path.dirname(self.file_path))
+        msg_path = os.path.join(user_dir, "messages.json")
+
         
         if os.path.isfile(msg_path):
             try:
